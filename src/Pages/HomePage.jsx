@@ -259,7 +259,7 @@ export default function HomePage () {
 
               {/* Card 2 */}
               <Link
-                to='/donor/register'
+                to='/signup'
                 className='group border border-slate-200 rounded-2xl p-7 hover:border-[#B91C1C]/30 hover:shadow-xl transition-all duration-300'
               >
                 <div className='w-14 h-14 rounded-2xl bg-[#1E293B]/10 text-[#1E293B] flex items-center justify-center'>
@@ -440,7 +440,7 @@ export default function HomePage () {
                 </div>
 
                 <Link
-                  to='/donor/register'
+                  to='/signup'
                   className='shrink-0 bg-white text-[#B91C1C] hover:bg-[#F8FAFC] px-7 py-3.5 rounded-xl font-bold inline-flex items-center gap-3 transition-all duration-300'
                 >
                   Become a Donor

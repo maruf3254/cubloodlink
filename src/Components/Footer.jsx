@@ -86,7 +86,7 @@ export default function Footer() {
 
               <li>
                 <Link
-                  to="/find-donor"
+                  to="/donors"
                   className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition"
                 >
                   <FiSearch size={15} />

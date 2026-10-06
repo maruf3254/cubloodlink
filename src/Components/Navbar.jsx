@@ -66,10 +66,13 @@ import {
   FiLogIn,
   FiUser,
   FiChevronDown,
-  FiLogOut
+  FiLogOut,
+  FiHome,
+  FiActivity,
 } from 'react-icons/fi'
 
 import { logout } from '../Redux/Slices/AuthSlice'
+import { FaBusinessTime } from 'react-icons/fa'
 
 // import logo from '../assets/logo.png'
 
@@ -92,7 +95,8 @@ export default function Header () {
   const navItems = [
     {
       name: 'Home',
-      path: '/'
+      path: '/',
+      icon: FiHome
     },
     {
       name: 'Find Donor',
@@ -101,7 +105,8 @@ export default function Header () {
     },
     {
       name: 'How It Works',
-      path: '/how-it-works'
+      path: '/how-it-works',
+      icon: FiActivity
     },
     {
       name: 'About',

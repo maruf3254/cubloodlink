@@ -59,7 +59,7 @@ export default function FindDonor () {
   }
 
   return (
-    <Layout hideFooter={true}>
+    <Layout >
       <section className='min-h-[100vh] bg-[#F8FAFC] dark:bg-gray-900 flex items-center justify-center px-4 py-10'>
         <div className='w-full max-w-[550px]'>
           <div className='bg-white dark:bg-gray-800 rounded-xl shadow-custom dark:shadow-xl p-6 md:p-8'>
@@ -116,7 +116,7 @@ export default function FindDonor () {
                   type='text'
                   value={name}
                   onChange={e => setName(e.target.value)}
-                  placeholder='e.g. Maruf'
+                  placeholder='e.g. Ahmed'
                   autoComplete='off'
                   className='w-full rounded-md border border-gray-300 dark:border-slate-600 bg-white dark:bg-gray-700 text-[#334155] dark:text-slate-100 px-4 py-3 outline-none focus:border-[#B91C1C] transition'
                 />

@@ -234,21 +234,24 @@ export default function About () {
             <div className='grid lg:grid-cols-5 gap-10 lg:gap-16 items-center'>
               {/* Identity */}
               <div className='lg:col-span-2 text-center lg:text-left'>
+                
                 <div
                   aria-hidden='true'
-                  className='mx-auto lg:mx-0 w-24 h-24 rounded-full bg-[#B91C1C] flex items-center justify-center text-3xl font-bold tracking-wide ring-4 ring-white/10'
+                  className='mx-auto lg:mx-0 w-24 h-24 rounded-full overflow-hidden bg-[#B91C1C] ring-4 ring-white/10 shadow-lg'
                 >
-                  IJ
+                  <img
+                    src='https://i.imgur.com/UcwpgV8.png'
+                    alt='Imtiaz Jabed'
+                    className='w-full h-full object-cover object-center'
+                  />
                 </div>
-
+                
                 <p className='mt-6 text-sm font-semibold text-white/60 uppercase tracking-[0.18em]'>
                   Initiator of CU BloodLink
                 </p>
-
                 <h2 className='mt-2 text-3xl md:text-4xl font-bold'>
                   Imtiaz Jabed
                 </h2>
-
                 <p className='mt-2 text-slate-300'>
                   BBA, Department of Marketing
                   <br />
