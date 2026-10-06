@@ -16,8 +16,8 @@ import Layout from '../Layout/Layout'
 
 // Update these if your routes are different.
 const ROUTES = {
-  findDonor: '/find-donor',
-  register: '/register'
+  findDonor: '/donors',
+  register: '/signup'
 }
 
 const seekerSteps = [

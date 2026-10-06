@@ -8,6 +8,8 @@ import {
   FiPhone,
   FiArrowUp,
   FiShield,
+  FiHome,
+  FiActivity,
 } from "react-icons/fi";
 
 export default function Footer() {
@@ -80,6 +82,7 @@ export default function Footer() {
                   to="/"
                   className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition"
                 >
+                   <FiHome size={15} />
                   Home
                 </Link>
               </li>
@@ -93,15 +96,17 @@ export default function Footer() {
                   Find Donor
                 </Link>
               </li>
-
               <li>
                 <Link
                   to="/how-it-works"
-                  className="text-sm text-slate-400 hover:text-white transition"
+                  className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition"
                 >
+                  <FiActivity size={15} />
                   How It Works
                 </Link>
               </li>
+
+              
 
               <li>
                 <Link
@@ -137,7 +142,7 @@ export default function Footer() {
                   to="/privacy-policy"
                   className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition"
                 >
-                  <FiShield size={15} />
+                  
                   Privacy Policy
                 </Link>
               </li>
@@ -147,6 +152,7 @@ export default function Footer() {
                   to="/terms"
                   className="text-sm text-slate-400 hover:text-white transition"
                 >
+                  
                   Terms & Conditions
                 </Link>
               </li>

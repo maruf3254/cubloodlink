@@ -22,197 +22,425 @@ export default function HomePage () {
     <Layout>
       <main className='bg-[#F8FAFC] text-[#334155]'>
         {/* ================= HERO ================= */}
-        <section className='relative overflow-hidden min-h-[88vh] flex items-center'>
-          {/* Background decoration */}
-          <div className='absolute -top-32 -right-32 w-96 h-96 bg-[#B91C1C]/5 rounded-full blur-3xl' />
-          <div className='absolute -bottom-40 -left-40 w-96 h-96 bg-[#1E293B]/5 rounded-full blur-3xl' />
+       
+<section className='relative overflow-hidden min-h-[88vh] flex items-center bg-[#F8FAFC]'>
 
-          <div className='max-w-7xl mx-auto w-full px-6 md:px-10 py-16 md:py-20 relative z-10'>
-            <div className='grid lg:grid-cols-2 gap-12 lg:gap-20 items-center'>
-              {/* LEFT */}
-              <div>
-                {/* Small badge */}
-                <div className='inline-flex items-center gap-2 bg-white border border-slate-200 shadow-sm rounded-full px-4 py-2 mb-7'>
-                  <span className='flex items-center justify-center w-6 h-6 rounded-full bg-[#B91C1C] text-white'>
-                    <FiDroplet size={13} />
-                  </span>
+  {/* =========================================================
+      BACKGROUND DECORATION
+  ========================================================= */}
+  <div className='absolute inset-0 pointer-events-none'>
 
-                  <span className='text-sm font-semibold text-[#1E293B]'>
-                    University Blood Donation Network
-                  </span>
-                </div>
+    {/* Large soft circles */}
+    <div className='absolute -top-40 -right-40 w-[30rem] h-[30rem] bg-[#B91C1C]/5 rounded-full blur-3xl' />
 
-                {/* Heading */}
-                <h1 className='text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.05] tracking-tight text-[#1E293B]'>
-                  One campus.
-                  <br />
-                  <span className='text-[#B91C1C]'>Thousands of lives.</span>
-                  <br />
-                  One connection.
-                </h1>
+    <div className='absolute -bottom-48 -left-48 w-[34rem] h-[34rem] bg-[#1E293B]/5 rounded-full blur-3xl' />
 
-                {/* Description */}
-                <p className='mt-7 text-base md:text-lg lg:text-xl leading-8 text-[#334155] max-w-xl'>
-                  CU BloodLink connects students who need blood with verified
-                  donors across the university community — making it easier to
-                  find the right donor when every moment matters.
-                </p>
+    {/* Subtle center glow */}
+    <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[28rem] h-[28rem] bg-[#B91C1C]/[0.025] rounded-full blur-3xl' />
 
-                {/* Buttons */}
-                <div className='flex flex-col sm:flex-row gap-4 mt-9'>
-                  <Link
-                    to='/signup'
-                    className='group inline-flex items-center justify-center gap-3 bg-[#B91C1C] hover:bg-[#991B1B] text-white px-6 py-3.5 rounded-xl font-semibold text-base shadow-lg shadow-[#B91C1C]/20 transition-all duration-300'
-                  >
-                    Become a Donor
-                    <FiArrowRight className='group-hover:translate-x-1 transition-transform' />
-                  </Link>
+    {/* Minimal grid */}
+    <div
+      className='absolute inset-0 opacity-[0.025]'
+      style={{
+        backgroundImage:
+          'linear-gradient(#1E293B 1px, transparent 1px), linear-gradient(90deg, #1E293B 1px, transparent 1px)',
+        backgroundSize: '44px 44px',
+      }}
+    />
+  </div>
 
-                  <Link
-                    to='/donors'
-                    className='inline-flex items-center justify-center gap-3 bg-white hover:bg-[#1E293B] hover:text-white border border-slate-200 text-[#1E293B] px-6 py-3.5 rounded-xl font-semibold text-base transition-all duration-300'
-                  >
-                    <FiSearch />
-                    Find a Donor
-                  </Link>
-                </div>
+  <div className='max-w-7xl mx-auto w-full px-5 sm:px-6 md:px-10 py-16 md:py-20 lg:py-24 relative z-10'>
 
-                {/* Trust points */}
-                <div className='flex flex-wrap gap-x-6 gap-y-3 mt-8'>
-                  <div className='flex items-center gap-2 text-sm font-medium'>
-                    <FiCheckCircle className='text-[#B91C1C]' />
-                    Verified Students
-                  </div>
+    <div className='grid lg:grid-cols-2 gap-14 lg:gap-20 xl:gap-24 items-center'>
 
-                  <div className='flex items-center gap-2 text-sm font-medium'>
-                    <FiShield className='text-[#B91C1C]' />
-                    Privacy Focused
-                  </div>
+      {/* =========================================================
+          LEFT CONTENT
+      ========================================================= */}
+      <div className='max-w-2xl'>
 
-                  <div className='flex items-center gap-2 text-sm font-medium'>
-                    <FiClock className='text-[#B91C1C]' />
-                    Quick Connection
-                  </div>
-                </div>
-              </div>
+        {/* Badge */}
+        <div className='inline-flex items-center gap-2.5 bg-white/90 backdrop-blur-sm border border-slate-200 shadow-sm rounded-full px-3.5 py-2 mb-7 hover:shadow-md transition-shadow duration-300'>
 
-              {/* RIGHT VISUAL */}
-              <div className='relative'>
-                {/* Main card */}
-                <div className='relative max-w-md mx-auto'>
-                  {/* Outer glow */}
-                  <div className='absolute inset-5 bg-[#B91C1C]/10 rounded-[3rem] blur-2xl' />
+          <span className='flex items-center justify-center w-7 h-7 rounded-full bg-[#B91C1C] text-white shadow-sm'>
+            <FiDroplet size={14} />
+          </span>
 
-                  <div className='relative bg-white border border-slate-200 rounded-[2rem] shadow-2xl p-6 md:p-8'>
-                    {/* Top */}
-                    <div className='flex items-center justify-between mb-7'>
-                      <div>
-                        <p className='text-xs font-semibold uppercase tracking-wider text-[#334155]'>
-                          CU BloodLink
-                        </p>
+          <span className='text-xs sm:text-sm font-bold tracking-wide text-[#1E293B]'>
+            University Blood Donation Network
+          </span>
 
-                        <h3 className='text-xl font-bold text-[#1E293B] mt-1'>
-                          Blood Network
-                        </h3>
-                      </div>
+          <span className='w-2 h-2 rounded-full bg-[#B91C1C] animate-pulse' />
+        </div>
 
-                      <div className='w-12 h-12 rounded-2xl bg-[#B91C1C] text-white flex items-center justify-center shadow-lg shadow-[#B91C1C]/20'>
-                        <FiDroplet size={24} />
-                      </div>
-                    </div>
+        {/* Small eyebrow */}
+        <div className='flex items-center gap-3 mb-4'>
+          <span className='w-10 h-[2px] bg-[#B91C1C]' />
 
-                    {/* Blood group visual */}
-                    <div className='bg-[#F8FAFC] border border-slate-200 rounded-2xl p-6'>
-                      <div className='flex items-center justify-between'>
-                        <div>
-                          <p className='text-sm text-[#334155]'>Blood needed</p>
+          <span className='text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-[#B91C1C]'>
+            CU BloodLink
+          </span>
+        </div>
 
-                          <p className='text-4xl font-bold text-[#B91C1C] mt-1'>
-                            O+
-                          </p>
-                        </div>
+        {/* Main Heading */}
+        <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-[4.25rem] xl:text-[4.7rem] font-extrabold leading-[1.02] tracking-[-0.035em] text-[#1E293B]'>
 
-                        <div className='w-20 h-20 rounded-full border-8 border-[#B91C1C]/10 flex items-center justify-center'>
-                          <FiDroplet size={30} className='text-[#B91C1C]' />
-                        </div>
-                      </div>
+          One campus.
+          <br />
 
-                      <div className='flex items-center gap-2 mt-5 text-sm text-[#334155]'>
-                        <FiMapPin className='text-[#B91C1C]' />
-                        Chittagong University
-                      </div>
-                    </div>
+          <span className='relative inline-block text-[#B91C1C]'>
+            Thousands of lives.
 
-                    {/* Donor card */}
-                    <div className='mt-5 border border-slate-200 rounded-2xl p-5'>
-                      <div className='flex items-center gap-4'>
-                        <div className='w-12 h-12 rounded-full bg-[#1E293B] text-white flex items-center justify-center'>
-                          <FiUserPlus size={21} />
-                        </div>
+            {/* Underline */}
+            <span className='absolute left-0 right-0 -bottom-1 sm:-bottom-2 h-[3px] sm:h-[4px] bg-[#B91C1C]/15 rounded-full' />
+          </span>
 
-                        <div className='flex-1'>
-                          <p className='font-bold text-[#1E293B]'>
-                            Verified Donor
-                          </p>
+          <br />
 
-                          <p className='text-sm text-[#334155]'>
-                            Available for donation
-                          </p>
-                        </div>
+          <span className='text-[#1E293B]'>
+            One connection.
+          </span>
+        </h1>
 
-                        <FiCheckCircle className='text-[#B91C1C]' size={22} />
-                      </div>
+        {/* Description */}
+        <p className='mt-7 text-base md:text-lg lg:text-xl leading-8 text-[#334155] max-w-xl'>
+          CU BloodLink connects students who need blood with verified
+          donors across the university community — making it easier to
+          find the right donor when every moment matters.
+        </p>
 
-                      <div className='grid grid-cols-2 gap-3 mt-4'>
-                        <div className='bg-[#F8FAFC] rounded-lg p-3'>
-                          <p className='text-xs text-[#334155]'>Blood Group</p>
-                          <p className='font-bold text-[#1E293B] mt-1'>O+</p>
-                        </div>
+        {/* Buttons */}
+        <div className='flex flex-col sm:flex-row gap-3.5 mt-9'>
 
-                        <div className='bg-[#F8FAFC] rounded-lg p-3'>
-                          <p className='text-xs text-[#334155]'>Status</p>
-                          <p className='font-bold text-[#1E293B] mt-1'>
-                            Available
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+          <Link
+            to='/signup'
+            className='group relative inline-flex items-center justify-center gap-3 overflow-hidden bg-[#B91C1C] hover:bg-[#991B1B] text-white px-6 sm:px-7 py-3.5 rounded-xl font-semibold text-sm sm:text-base shadow-lg shadow-[#B91C1C]/20 hover:shadow-xl hover:shadow-[#B91C1C]/25 transition-all duration-300'
+          >
+            <span className='absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300' />
 
-                    {/* Bottom */}
-                    <div className='flex items-center justify-center gap-2 mt-6 text-sm font-semibold text-[#334155]'>
-                      <FiHeart className='text-[#B91C1C]' />
-                      Every donation can make a difference.
-                    </div>
-                  </div>
-                </div>
+            <span className='relative'>
+              Become a Donor
+            </span>
 
-                {/* Floating card 1 */}
-                <div className='absolute -left-3 md:-left-10 top-20 bg-white border border-slate-200 shadow-xl rounded-2xl px-4 py-3 flex items-center gap-3'>
-                  <div className='w-9 h-9 rounded-xl bg-[#B91C1C] text-white flex items-center justify-center'>
-                    <FiUsers size={18} />
-                  </div>
+            <FiArrowRight
+              className='relative group-hover:translate-x-1.5 transition-transform duration-300'
+              size={18}
+            />
+          </Link>
 
-                  <div>
-                    <p className='text-xs text-[#334155]'>Community</p>
-                    <p className='font-bold text-[#1E293B]'>CU Students</p>
-                  </div>
-                </div>
+          <Link
+            to='/donors'
+            className='group inline-flex items-center justify-center gap-3 bg-white hover:bg-[#1E293B] hover:text-white border border-slate-200 hover:border-[#1E293B] text-[#1E293B] px-6 sm:px-7 py-3.5 rounded-xl font-semibold text-sm sm:text-base shadow-sm hover:shadow-lg transition-all duration-300'
+          >
+            <FiSearch
+              size={18}
+              className='group-hover:scale-110 transition-transform duration-300'
+            />
 
-                {/* Floating card 2 */}
-                <div className='absolute -right-2 md:-right-8 bottom-16 bg-[#1E293B] text-white shadow-xl rounded-2xl px-4 py-3 flex items-center gap-3'>
-                  <div className='w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center'>
-                    <FiShield size={18} />
-                  </div>
+            Find a Donor
+          </Link>
+        </div>
 
-                  <div>
-                    <p className='text-xs text-slate-300'>System</p>
-                    <p className='font-bold'>Student Verified</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+        {/* Trust Points */}
+        <div className='flex flex-wrap gap-x-6 gap-y-3 mt-8'>
+
+          <div className='flex items-center gap-2 text-sm font-medium text-[#334155]'>
+            <span className='flex items-center justify-center w-6 h-6 rounded-full bg-[#B91C1C]/10'>
+              <FiCheckCircle
+                className='text-[#B91C1C]'
+                size={14}
+              />
+            </span>
+
+            Verified Students
           </div>
-        </section>
+
+          <div className='flex items-center gap-2 text-sm font-medium text-[#334155]'>
+            <span className='flex items-center justify-center w-6 h-6 rounded-full bg-[#B91C1C]/10'>
+              <FiShield
+                className='text-[#B91C1C]'
+                size={14}
+              />
+            </span>
+
+            Privacy Focused
+          </div>
+
+          <div className='flex items-center gap-2 text-sm font-medium text-[#334155]'>
+            <span className='flex items-center justify-center w-6 h-6 rounded-full bg-[#B91C1C]/10'>
+              <FiClock
+                className='text-[#B91C1C]'
+                size={14}
+              />
+            </span>
+
+            Quick Connection
+          </div>
+
+        </div>
+
+        {/* Bottom mini trust line */}
+        <div className='mt-9 flex items-center gap-3 text-xs sm:text-sm text-slate-500'>
+
+          <div className='flex -space-x-2'>
+            <span className='w-7 h-7 rounded-full bg-[#1E293B] border-2 border-[#F8FAFC]' />
+            <span className='w-7 h-7 rounded-full bg-[#B91C1C] border-2 border-[#F8FAFC]' />
+            <span className='w-7 h-7 rounded-full bg-[#334155] border-2 border-[#F8FAFC]' />
+          </div>
+
+          <span>
+            Built for the University of Chittagong community
+          </span>
+
+        </div>
+
+      </div>
+
+
+      {/* =========================================================
+          RIGHT VISUAL
+      ========================================================= */}
+      <div className='relative flex items-center justify-center lg:justify-end'>
+
+        {/* Large decorative circle */}
+        <div className='absolute w-[24rem] h-[24rem] sm:w-[28rem] sm:h-[28rem] rounded-full border border-[#B91C1C]/10' />
+
+        <div className='absolute w-[20rem] h-[20rem] sm:w-[24rem] sm:h-[24rem] rounded-full border border-[#1E293B]/5' />
+
+        {/* Main Card Wrapper */}
+        <div className='relative w-full max-w-md'>
+
+          {/* Glow */}
+          <div className='absolute -inset-5 bg-[#B91C1C]/10 rounded-[3rem] blur-3xl' />
+
+          {/* Main Card */}
+          <div className='relative bg-white/95 backdrop-blur-xl border border-white rounded-[2rem] shadow-[0_25px_70px_rgba(30,41,59,0.14)] p-5 sm:p-6 md:p-7'>
+
+            {/* Top */}
+            <div className='flex items-center justify-between mb-6'>
+
+              <div>
+                <div className='flex items-center gap-2'>
+                  <span className='w-2 h-2 rounded-full bg-[#B91C1C] animate-pulse' />
+
+                  <p className='text-[10px] sm:text-xs font-bold uppercase tracking-[0.16em] text-[#334155]'>
+                    CU BloodLink
+                  </p>
+                </div>
+
+                <h3 className='text-xl sm:text-2xl font-extrabold text-[#1E293B] mt-1'>
+                  Blood Network
+                </h3>
+              </div>
+
+              <div className='relative'>
+                <div className='absolute inset-0 bg-[#B91C1C]/20 rounded-2xl blur-md' />
+
+                <div className='relative w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#B91C1C] text-white flex items-center justify-center shadow-lg shadow-[#B91C1C]/20'>
+                  <FiDroplet size={25} />
+                </div>
+              </div>
+
+            </div>
+
+
+            {/* Blood Request Card */}
+            <div className='relative overflow-hidden bg-[#F8FAFC] border border-slate-200 rounded-2xl p-5 sm:p-6'>
+
+              {/* Decorative */}
+              <div className='absolute -right-10 -top-10 w-28 h-28 rounded-full bg-[#B91C1C]/5' />
+
+              <div className='relative flex items-center justify-between'>
+
+                <div>
+                  <div className='flex items-center gap-2'>
+                    <span className='w-2 h-2 rounded-full bg-[#B91C1C]' />
+
+                    <p className='text-xs sm:text-sm font-medium text-[#334155]'>
+                      Blood needed
+                    </p>
+                  </div>
+
+                  <p className='text-5xl sm:text-6xl font-extrabold text-[#B91C1C] mt-1 tracking-tight'>
+                    O+
+                  </p>
+
+                  <p className='text-xs text-slate-500 mt-1'>
+                    Urgent requirement
+                  </p>
+                </div>
+
+                <div className='relative w-20 h-20 sm:w-24 sm:h-24 rounded-full border-[9px] border-[#B91C1C]/10 flex items-center justify-center'>
+
+                  <div className='absolute inset-2 rounded-full bg-[#B91C1C]/5' />
+
+                  <FiDroplet
+                    size={31}
+                    className='relative text-[#B91C1C]'
+                  />
+
+                </div>
+
+              </div>
+
+              <div className='flex items-center gap-2 mt-5 pt-4 border-t border-slate-200 text-sm text-[#334155]'>
+                <FiMapPin
+                  className='text-[#B91C1C]'
+                  size={16}
+                />
+
+                <span>
+                  Chittagong University
+                </span>
+              </div>
+
+            </div>
+
+
+            {/* Donor Card */}
+            <div className='mt-4 border border-slate-200 rounded-2xl p-4 sm:p-5 bg-white'>
+
+              <div className='flex items-center gap-4'>
+
+                <div className='relative flex-shrink-0'>
+                  <div className='w-12 h-12 rounded-full bg-[#1E293B] text-white flex items-center justify-center shadow-md'>
+                    <FiUserPlus size={21} />
+                  </div>
+
+                  <span className='absolute -right-0.5 -bottom-0.5 w-3.5 h-3.5 rounded-full bg-[#B91C1C] border-2 border-white' />
+                </div>
+
+                <div className='flex-1 min-w-0'>
+                  <p className='font-bold text-[#1E293B]'>
+                    Verified Donor
+                  </p>
+
+                  <p className='text-xs sm:text-sm text-[#334155] mt-0.5'>
+                    Available for donation
+                  </p>
+                </div>
+
+                <div className='flex items-center justify-center w-9 h-9 rounded-full bg-[#B91C1C]/10'>
+                  <FiCheckCircle
+                    className='text-[#B91C1C]'
+                    size={20}
+                  />
+                </div>
+
+              </div>
+
+              {/* Donor Info */}
+              <div className='grid grid-cols-2 gap-3 mt-4'>
+
+                <div className='bg-[#F8FAFC] border border-slate-100 rounded-xl p-3'>
+                  <p className='text-[10px] sm:text-xs text-[#334155] uppercase tracking-wide'>
+                    Blood Group
+                  </p>
+
+                  <p className='font-extrabold text-[#1E293B] mt-1'>
+                    O+
+                  </p>
+                </div>
+
+                <div className='bg-[#F8FAFC] border border-slate-100 rounded-xl p-3'>
+                  <p className='text-[10px] sm:text-xs text-[#334155] uppercase tracking-wide'>
+                    Status
+                  </p>
+
+                  <div className='flex items-center gap-1.5 mt-1'>
+                    <span className='w-1.5 h-1.5 rounded-full bg-[#B91C1C]' />
+
+                    <p className='font-bold text-[#1E293B]'>
+                      Available
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+
+            {/* Bottom Message */}
+            <div className='flex items-center justify-center gap-2 mt-5 pt-1 text-xs sm:text-sm font-semibold text-[#334155]'>
+              <FiHeart
+                className='text-[#B91C1C]'
+                size={16}
+              />
+
+              Every donation can make a difference.
+            </div>
+
+          </div>
+
+
+          {/* =====================================================
+              FLOATING CARD — COMMUNITY
+          ===================================================== */}
+          <div className='absolute -left-4 sm:-left-10 lg:-left-14 top-16 sm:top-20 bg-white/95 backdrop-blur-md border border-white shadow-[0_15px_35px_rgba(30,41,59,0.12)] rounded-2xl px-3.5 sm:px-4 py-3 flex items-center gap-3 hover:-translate-y-1 transition-transform duration-300'>
+
+            <div className='w-9 h-9 rounded-xl bg-[#B91C1C] text-white flex items-center justify-center shadow-md'>
+              <FiUsers size={17} />
+            </div>
+
+            <div>
+              <p className='text-[10px] uppercase tracking-wider text-[#334155]'>
+                Community
+              </p>
+
+              <p className='text-sm font-bold text-[#1E293B]'>
+                CU Students
+              </p>
+            </div>
+
+          </div>
+
+
+          {/* =====================================================
+              FLOATING CARD — VERIFIED
+          ===================================================== */}
+          <div className='absolute -right-3 sm:-right-8 lg:-right-10 bottom-14 sm:bottom-16 bg-[#1E293B] text-white shadow-[0_15px_35px_rgba(30,41,59,0.2)] rounded-2xl px-3.5 sm:px-4 py-3 flex items-center gap-3 hover:-translate-y-1 transition-transform duration-300'>
+
+            <div className='w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center'>
+              <FiShield size={17} />
+            </div>
+
+            <div>
+              <p className='text-[10px] uppercase tracking-wider text-slate-400'>
+                System
+              </p>
+
+              <p className='text-sm font-bold'>
+                Student Verified
+              </p>
+            </div>
+
+          </div>
+
+
+          {/* =====================================================
+              SMALL FLOATING STATUS
+          ===================================================== */}
+          <div className='absolute -right-2 sm:right-4 top-5 bg-white border border-slate-200 shadow-lg rounded-full px-3 py-2 flex items-center gap-2'>
+
+            <span className='relative flex w-2.5 h-2.5'>
+              <span className='absolute inline-flex h-full w-full rounded-full bg-[#B91C1C] opacity-40 animate-ping' />
+              <span className='relative inline-flex rounded-full h-2.5 w-2.5 bg-[#B91C1C]' />
+            </span>
+
+            <span className='text-[11px] sm:text-xs font-bold text-[#1E293B]'>
+              Network Active
+            </span>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 
         {/* ================= QUICK ACTIONS ================= */}
         <section className='py-16 md:py-20 bg-white border-y border-slate-200'>
