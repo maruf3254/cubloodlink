@@ -83,7 +83,7 @@ export default function About () {
 
               <div className='flex flex-col sm:flex-row items-center justify-center gap-3 mt-8'>
                 <Link
-                  to='/find-donor'
+                  to='/donors'
                   className='w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-[#B91C1C] hover:bg-[#991B1B] text-white font-semibold text-sm transition-all duration-200 shadow-sm hover:shadow-md'
                 >
                   <FiSearch size={18} />
